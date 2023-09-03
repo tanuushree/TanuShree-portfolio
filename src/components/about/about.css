@@ -1,8 +1,10 @@
 .me{
     background-color:rgb(17, 35, 47) ;
+    min-height: 100vh; /* Make me div full viewport height */
+    position: relative; 
 }
 .title{
-    padding-top: 10px;
+    padding-top: 5rem;
     color:white;
     font-size: 35px;
     
@@ -16,7 +18,7 @@
 
 .main{
     display: flex;
-    padding-top: 5rem;
+    padding-top:5rem;
 
 
 }
@@ -32,8 +34,107 @@
 .content{
     color: white;
     text-align: justify;
-    padding-left:rem;
-    width:800px;
-    padding-right: 10rem;
+    padding:0 18rem;
+    padding-bottom: 5rem;
+    font-size: large;
+    box-shadow: #FF7545;
     
+}
+.content p{
+    padding-bottom: 2rem;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+.section{
+    position: relative; /* Add position absolute to section div */
+    left:22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.features-small-item {
+    cursor: pointer;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 100;
+    text-align: center;
+    position: absolute;
+    width: 50rem;
+    
+    
+  } 
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 30px;
+    padding: 10px;
+  }
+  .grid-item {
+    display: flex; /* Use flexbox to center-align content */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+/* Define a keyframes animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to each icon with a delay */
+.icon {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Add a delay to each icon */
+.icon:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.icon:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.icon:nth-child(3) {
+    animation-delay: 0.6s;
+}
+/* Add similar delay styles for the other icons */
+
+
+@media (max-width: 768px) {
+    .features-small-item {
+        width: 90%;
+        padding-left: 20rem; /* Adjust the width for smaller screens */
+    }
+}
+
+/* Media query for screens between 768px and 1024px (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .features-small-item {
+        width: 70%; /* Adjust the width for medium-sized screens */
+        padding-left: 15rem;
+    }
+}
+
+/* Media query for screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+    .features-small-item {
+        width: 50rem; /* Reset the width for larger screens */
+    }
 }

@@ -23,8 +23,10 @@ header {
 	background-color: rgb(17, 35, 47)   ;
 	color: var(--textColor);
 }
-header h3{
-	font-family:cursive
+header h1{
+	font-family:cursive;
+	font-size:xx-large;
+	font-weight: 500;
 }
 nav a {
 	margin: 0 1rem;
