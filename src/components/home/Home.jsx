@@ -3,8 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
 import profile from '../../profile.svg';
 import Typed from 'typed.js';
-import { useEffect, useRef } from "react";
-import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faXTwitter, faGithub} from '@fortawesome/free-brands-svg-icons';
 

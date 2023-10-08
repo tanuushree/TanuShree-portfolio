@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faSquare, faCode, faBracketsCurly} from '@fortawesome/free-solid-svg-icons';
+import {faSquare} from '@fortawesome/free-solid-svg-icons';
 import { Icon } from '@iconify/react';
 import './about.css';
 

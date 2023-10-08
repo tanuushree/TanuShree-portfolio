@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
