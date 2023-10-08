@@ -3,6 +3,9 @@
     min-height: 100vh; /* Make me div full viewport height */
     position: relative; 
 }
+.about{
+  z-index: -1;
+}
 .title{
     padding-top: 5rem;
     color:white;

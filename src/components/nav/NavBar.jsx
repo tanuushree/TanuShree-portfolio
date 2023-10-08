@@ -15,10 +15,9 @@ function Navbar() {
 		<header>
 			<h1>Tanu</h1>
 			<nav ref={navRef}>
-				<a href="/home/">Home</a>
-				<a href="/aboutme/">About me</a>
-				<a href="/#">My work</a>
-				<a href="/#">Projects</a>
+				<a href="#home">Home</a>
+				<a href="#aboutme">About me</a>
+				<a href="#mywork">My work</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

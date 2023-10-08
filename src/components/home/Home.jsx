@@ -28,7 +28,7 @@ function Home(){
   
     return(
         <div>
-            <div className='first-page '>
+            <div className='first-page' id="home">
                 <div className='image '>
                     <img  src={profile} alt= "about"/>
                 </div>
