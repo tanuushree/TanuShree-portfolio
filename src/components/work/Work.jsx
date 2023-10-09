@@ -77,7 +77,7 @@ function Home(){
                   {cardContent.map((content, idx) => (
                     <Col key={idx}>
                       <StyledCard>
-                        <Card.Img variant="top" src={content.image} />
+                        <Card.Img src={content.image} style={{width:'100%'}}/>
                         <Card.Body>
                           <StyledCardTitle>{content.title}</StyledCardTitle>
                           <Card.Text>{content.text}</Card.Text>

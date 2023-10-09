@@ -1,24 +1,17 @@
 .first-page{
     display: flex;
     padding:0;
-    height: 630px;
-    overflow-x:scroll;
+    height: auto;
+    overflow:hidden;
 }
 
-.image{
-    display: flex;
-    margin:1rem;
-    padding-top: rem;
-    
-    
-}
-
-img{
-    max-inline-size: 100%;
-    block-size: auto;
+.girl-img{
+    max-width: 55%;
+    padding-top: 2rem;
 }
 
 .intro{
+    flex:1;
     padding-top: 12rem;
     font-size:45px;
     color:rgb(17, 35, 47);
@@ -29,7 +22,7 @@ img{
 }
 
 .intro p{
-    font-size: 15px;
+    font-size: 4vh;
     color: #FF7545;
     font-weight:600;
     padding: 10px;
@@ -58,7 +51,7 @@ img{
 
 .wrapper .static-txt{
     
-    font-size: 5vh; 
+    font-size: 3vh; 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
@@ -66,27 +59,74 @@ img{
 .wrapper .dynamic-txt{
     max-width: max-content;
     width: auto;
-    font-size: 5vh; 
+    font-size: 3vh; 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
-/* Define styles for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
     .static-txt {
-      font-size: 16px;
+      font-size: 10px;
     }
     .dynamic-txt {
-      font-size: 20px;
+      font-size: 10px;
     }
+    .intro {
+        font-size: 16px;
+        padding-top: 8rem; 
+      }
+      .intro h1 {
+        font-size: 5vw; 
+      }
+      .intro p {
+        font-size: 12px; 
+      }
+      .social-media-icon {
+        font-size: 1.5rem; 
+      }
+      
   }
-  
-  /* Define styles for larger screens (e.g., desktop) */
+
   @media (min-width: 769px) {
     .static-txt {
       font-size: 24px;
     }
     .dynamic-txt {
-      font-size: 28px;
+      font-size: 20px;
     }
+    .intro {
+        font-size: 45px;
+        padding-top: 12rem;
+      }
+      .intro h1 {
+        font-size: 7vw;
+      }
+      .intro p {
+        font-size: 15px;
+      }
+      .social-media-icon {
+        font-size: 2rem;
+      }
   }
   
+
+  /* ... (previous styles) */
+
+/* Define styles for smaller screens (e.g., mobile devices) */
+
+  
+  /* Define styles for larger screens (e.g., desktop) */
+  @media (min-width: 769px) {
+    .intro {
+      font-size: 45px;
+      padding-top: 12rem;
+    }
+    .intro h1 {
+      font-size: 7vw;
+    }
+    .intro p {
+      font-size: 15px;
+    }
+    .social-media-icon {
+      font-size: 2rem;
+    }
+  }
