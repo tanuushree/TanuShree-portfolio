@@ -26,27 +26,28 @@
 }
 
 .main{
-    display: flex;
-    padding-top:5rem;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
 }
 
 .skills{
     color: white;
     font-size: 20px;
-    padding-left: 5rem;
+   
     font-weight: 500;
     width: 700px;
     text-align: justify;
 }
 .content{
-    color: white;
-    text-align: justify;
-    padding:0 18rem;
-    padding-bottom: 5rem;
-    font-size: large;
-    align-items: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 5rem;
+  font-size: large;
+  align-items: center;
+  padding: 0 10rem;
     
 }
 .content p{
@@ -139,9 +140,12 @@
     .features-small-item h4{
         font-size: 1.5rem;
     }
+    .title{
+      font-size: 25px;
+    }
 }
 
-/* Media query for screens between 768px and 1024px (e.g., tablets) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .features-small-item {
         width: 70%; 
@@ -156,10 +160,10 @@
   }  
 }
 
-/* Media query for screens larger than 1024px (e.g., desktops) */
+
 @media (min-width: 1025px) {
     .features-small-item {
-        width: 50rem; /* Reset the width for larger screens */
+        width: 50rem; 
     }
 }
 
